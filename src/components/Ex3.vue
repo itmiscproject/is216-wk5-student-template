@@ -1,28 +1,15 @@
 <script setup>
-// Minor change 3
 import { ref, computed } from 'vue'
 
 const x = ref(0)
 const y = ref(0)
-const lastResult = ref(0)
 const operators = ref(["+", "-", "*", "/", "%"])
 const selectedOp = ref("+")
 
-const result = computed(() => {
-    if (selectedOp.value == "+")
-        lastResult.value = x.value + y.value;
-    else if (selectedOp.value == "-")
-        lastResult.value = x.value - y.value;
-    else if (selectedOp.value == "*")
-        lastResult.value = x.value * y.value;
-    else if (selectedOp.value == "/")
-        lastResult.value = x.value / y.value;
-    else if (selectedOp.value == "%")
-        lastResult.value = x.value % y.value;
+// TODO: Add Code Here
+// Note: DO NOT USE "eval()". In security, "eval" is considered "evil"!!!
 
-    return lastResult.value;
-})
-
+    
 </script>
 
 <template>
